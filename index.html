@@ -33,9 +33,13 @@
     <header class="bg-gradient-to-b from-white to-[#EFEBE3]">
         <!-- Navbar -->
         <nav class="lg:max-w-screen-xl mx-auto">
-            <div class="flex justify-between items-center mt-6 ">
+            <div class="md:flex justify-between items-center md:mt-6 ">
                 <div>
-                    <a href=""><img class="" src="assets/logo-header.png" alt=""></a>
+                    <a href=""><img class="hidden md:block" src="assets/logo-header.png" alt=""></a>
+                </div>
+                <div class="md:hidden flex">
+                    <a href=""><img src="assets/mobile-nav-logo.png" alt=""></a>
+                    <i class="fa-solid fa-bars text-3xl"></i>
                 </div>
                 <div class="hidden md:block transform translate-x-28">
                     <ul class="flex gap-8 text-xl">
