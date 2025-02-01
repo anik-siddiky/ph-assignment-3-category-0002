@@ -26,7 +26,19 @@
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
-}
+    }
+
+    @keyframes colorChange {
+    0% { color: #179800; }
+    25% { color: #eb0f0b; }
+    50% { color: #b00ee8; }
+    75% { color: #FFC300; }
+    100% { color: #179800; }
+    }
+    .color-change {
+    animation: colorChange 6s infinite ease-in-out;
+    }
+
     </style>
 </head>
 <body class="font-sora">
@@ -61,11 +73,13 @@
 
         <!-- Hero Section -->
          <section class="mt-9 md:mt-20 text-center">
-            <h1 class="md:w-auto text-3xl md:text-[56px] font-semibold md:leading-[71px]">Freshness <span class="text-[#179800]">You Can</span> <br> <span class="text-[#179800]">Count</span> On, Prices <br class="md:hidden"> You’ll Love!</h1>
-            <p class="mt-4 md:mt-8 text-base font-light md:font-normal md:text-xl text-[#111111]">Shop your daily essentials at unbeatable <br class="md:hidden"> prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
-            <div class="mt-5 md:mt-10 flex justify-center items-center md:w-full">
-                <img src="assets/hero-vegetables.png" alt="">
-            </div>
+
+        <h1 class="text-3xl md:text-[56px] font-semibold md:leading-[71px]"> Freshness <span class="color-change">You Can</span> <br> <span class="color-change">Count</span> On, Prices <br class="md:hidden"> You’ll Love!</h1>
+              
+        <p class="mt-4 md:mt-8 text-base font-light md:font-normal md:text-xl text-[#111111]">Shop your daily essentials at unbeatable <br class="md:hidden"> prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+        <div class="mt-5 md:mt-10 flex justify-center items-center md:w-full">
+            <img src="assets/hero-vegetables.png" alt="">
+        </div>
          </section>
     </header>
     <main>
@@ -248,7 +262,7 @@
                         <!-- Two Rice card parent -->
          <div class="grid grid-cols-1 md:grid-cols-12 md:gap-5 mx-4 md:mx-auto">
             <!-- Dawat Biriyani Rice Section -->
-            <div class="flex bg-[#115414] rounded-xl md:rounded-3xl col-span-7">
+            <div class="flex bg-[#115414] rounded-xl md:rounded-3xl col-span-7 drop-shadow-md">
                  <div>
                     <img class="w-44 md:w-auto md:ml-10 pt-7 md:pt-12" src="assets/dawat-logo.png" alt="">
                     <button class="tracking-widest md:tracking-normal text-[10px] md:text-2xl text-white font-light px-4 py-2 md:px-8 md:py-4 bg-[#63B76D] rounded-lg md:rounded-2xl mt-4 md:mt-8 ml-4 md:ml-10">Cook Exotic Dishes</button>
@@ -262,7 +276,7 @@
             </div>
 
             <!-- India Gate Biriyani Rice Section -->
-            <div class="flex bg-[#102861] rounded-xl md:rounded-3xl col-span-5 mt-4 md:mt-0">
+            <div class="flex bg-[#102861] rounded-xl md:rounded-3xl col-span-5 mt-4 md:mt-0 drop-shadow-md">
                 <div>
                    <img class="w-20 md:w-auto ml-4 md:ml-6 pt-6 md:pt-5" src="assets/india-gate-logo.png" alt="">
                    <button class="tracking-widest md:tracking-normal text-[10px] md:text-2xl text-white font-light px-4 py-2 md:px-8 md:py-4 bg-[#2A4D97] rounded-lg md:rounded-2xl mt-3 md:mt-5 ml-4 md:ml-6">World’s No.1 Rice</button>
@@ -279,7 +293,7 @@
 
 
          <!-- Get Grocery News Section -->
-          <div class="bg-[#EFEBE3] max-w-[calc(100%-32px)] md:mx-0 rounded-2xl md:rounded-3xl md:flex text-center md:text-left items-center w-full md:w-full absolute left-1/2 transform -translate-x-1/2 bottom-[-260px] md:bottom-[-540px] z-10">
+          <div class="bg-[#EFEBE3] max-w-[calc(100%-32px)] md:max-w-[calc(100%)] md:mx-0 rounded-2xl md:rounded-3xl md:flex text-center md:text-left items-center w-full md:w-full absolute left-1/2 transform -translate-x-1/2 bottom-[-260px] md:bottom-[-540px] z-10 shadow-2xl">
             <!-- Image Section -->
              <div class="md:py-14 flex justify-center md:ml-24">
                 <img class="pt-8 md:pt-0 mt-8 md:mt-0 w-52 md:w-auto" src="assets/vegetable-busket.png" alt="">
