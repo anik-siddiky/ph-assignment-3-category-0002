@@ -237,10 +237,11 @@
         </section>
 
         <!-- Arrival & Offers Section -->
-         <section class="lg:max-w-screen-xl mx-auto mt-12 md:mt-36 md:mb-40">
+         <section class="lg:max-w-screen-xl mx-auto mt-12 md:mt-36 md:mb-80 relative">
             <h3 class="font-semibold text-2xl ml-4 md:ml-0 md:text-4xl mb-8 md:mb-12 text-[#179800]">Arrival & Offers</h3>
 
-        <!-- Two Rice card parent -->
+            <div class="">
+                        <!-- Two Rice card parent -->
          <div class="grid grid-cols-1 md:grid-cols-12 md:gap-5 mx-4 md:mx-auto">
             <!-- Dawat Biriyani Rice Section -->
             <div class="flex bg-[#115414] rounded-xl md:rounded-3xl col-span-7">
@@ -274,24 +275,54 @@
 
 
          <!-- Get Grocery News Section -->
-          <div class="bg-[#EFEBE3] rounded-3xl md:flex">
+          <div class="bg-[#EFEBE3] rounded-3xl md:flex items-center w-full absolute left-1/2 transform -translate-x-1/2 bottom-[-540px] z-10">
             <!-- Image Section -->
-             <div class="md:py-14">
+             <div class="md:py-14 md:ml-24">
                 <img src="assets/vegetable-busket.png" alt="">
              </div>
              <!-- Text and Input section -->
-              <div>
-                <h3>Get Grocery News!</h3>
-                <p>Exclusive training tips, ticks, product deals and more.</p>
-                <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-                <button class="px-8 py-3 bg-[#179800] text-white rounded-lg text-xl font-light hover:bg-white hover:text-black border border-[#179800]">Subscribe</button>
+              <div class="md:ml-32">
+                <h3 class="font-semibold text-4xl md:mt-24">Get Grocery News!</h3>
+                <p class="md:text-xl md:mt-6">Exclusive training tips, ticks, product deals and more.</p>
+                <input type="text" placeholder="Enter email...." class="input input-md w-full max-w-xs md:mt-9"/>
+                <br>
+                <input type="button" value="Subscribe" class="hover:cursor-pointer hover:bg-black px-8 py-3 bg-[#179800] text-white rounded-lg text-xl font-light md:mt-9">
               </div>
           </div>
+            </div>
 
          </section>
     </main>
-    <footer>
+    <footer class="bg-[#179800] md:h-[650px]">
+        <div class="lg:max-w-screen-xl mx-auto grid md:grid-cols-3 md:items-center md:pt-[370px]">
 
+            <!-- logo and paragraph -->
+            <div class="space-y-4">
+                <img src="assets/logo-footer.png" alt="">
+                <p class="text-xl text-[rgba(255,255,255,0.7)]">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+            </div>
+
+            <!-- Three page link -->
+             <div>
+                <ul class="text-xl text-[#EFEBE3] space-y-8">
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+             </div>
+
+             <!-- Social links -->
+             <div class="md:pt-24">
+                <h4 class="text-white">Follow Us</h4>
+                <div class="space-x-7">
+                    <i class="fa-brands fa-facebook text-white text-2xl"></i>
+                    <i class="fa-brands fa-instagram text-white text-2xl"></i>
+                    <i class="fa-brands fa-linkedin text-white text-2xl"></i>
+                    <i class="fa-brands fa-youtube text-white text-2xl"></i>
+                </div>
+             </div>
+
+        </div>
     </footer>
 </body>
 </html>
